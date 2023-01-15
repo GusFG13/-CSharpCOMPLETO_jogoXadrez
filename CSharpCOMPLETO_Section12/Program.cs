@@ -13,15 +13,20 @@ namespace CSharpCOMPLETO_Section12
                 //Posicao P;
                 //P = new Posicao(3, 4);
                 //Console.WriteLine("Posição: " + P);
-                //Tabuleiro tab = new Tabuleiro(8, 8);
-                //tab.colocarPeca(new Torre(tab, Cor.Preta), new(0, 0));
-                //tab.colocarPeca(new Torre(tab, Cor.Preta), new(1, 3));
-                //tab.colocarPeca(new Rei(tab, Cor.Preta), new(2, 4));
-                //Tela.imprimirTabuleiro(tab);
 
-                PosicaoXadrez pos = new PosicaoXadrez('c', 7);
-                Console.WriteLine(pos);
-                Console.WriteLine(pos.toPosicao());
+                Tabuleiro tab = new Tabuleiro(8, 8);
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new(0, 0));
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new(1, 3));
+                tab.colocarPeca(new Rei(tab, Cor.Preta), new(0, 2));
+
+                tab.colocarPeca(new Torre(tab, Cor.Branca), new(3, 5));
+
+
+                Tela.imprimirTabuleiro(tab);
+
+                //PosicaoXadrez pos = new PosicaoXadrez('c', 7);
+                //Console.WriteLine(pos);
+                //Console.WriteLine(pos.toPosicao());
 
 
 

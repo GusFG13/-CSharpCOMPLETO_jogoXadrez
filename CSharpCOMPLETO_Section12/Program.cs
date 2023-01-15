@@ -8,16 +8,25 @@ namespace CSharpCOMPLETO_Section12
     {
         static void Main(string[] args)
         {
-            //Posicao P;
-            //P = new Posicao(3, 4);
-            //Console.WriteLine("Posição: " + P);
+            try
+            {
+                //Posicao P;
+                //P = new Posicao(3, 4);
+                //Console.WriteLine("Posição: " + P);
 
-            Tabuleiro tab = new Tabuleiro(8, 8);
+                Tabuleiro tab = new Tabuleiro(8, 8);
 
-            tab.colocarPeca(new Torre(tab, Cor.Preta), new(0, 0));
-            tab.colocarPeca(new Torre(tab, Cor.Preta), new(1, 3));
-            tab.colocarPeca(new Rei(tab, Cor.Preta), new(2, 4));
-            Tela.imprimirTabuleiro(tab);
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new(0, 0));
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new(1, 3));
+                tab.colocarPeca(new Rei(tab, Cor.Preta), new(2, 4));
+
+               
+                Tela.imprimirTabuleiro(tab);
+            }
+            catch(TabuleiroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.ReadLine();
         }
     }

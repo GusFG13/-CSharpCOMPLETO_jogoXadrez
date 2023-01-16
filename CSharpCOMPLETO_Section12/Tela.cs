@@ -15,6 +15,11 @@ namespace CSharpCOMPLETO_Section12
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Agurdando jogada: " + partida.jogadorAtual);
+            if (partida.xeque)
+            {
+                Console.WriteLine("XEQUE!");
+            }
+
         }
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)
         {
@@ -30,7 +35,7 @@ namespace CSharpCOMPLETO_Section12
             Console.WriteLine();
         }
 
-        public static void imprimirConjunto(HashSet<Peca> conjunto) 
+        public static void imprimirConjunto(HashSet<Peca> conjunto)
         {
             Console.Write("[");
             foreach (Peca x in conjunto)

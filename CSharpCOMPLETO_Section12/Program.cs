@@ -10,27 +10,13 @@ namespace CSharpCOMPLETO_Section12
         {
             try
             {
-                //Posicao P;
-                //P = new Posicao(3, 4);
-                //Console.WriteLine("Posição: " + P);
-
-                //Tabuleiro tab = new Tabuleiro(8, 8);
-                //tab.colocarPeca(new Torre(tab, Cor.Preta), new(0, 0));
-                //tab.colocarPeca(new Torre(tab, Cor.Preta), new(1, 3));
-                //tab.colocarPeca(new Rei(tab, Cor.Preta), new(0, 2));
-
-                //tab.colocarPeca(new Torre(tab, Cor.Branca), new(3, 5));
-
                 PartidaDeXadrez partida = new PartidaDeXadrez();
                 while (!partida.terminada)
                 {
                     try
                     {
                         Console.Clear();
-                        Tela.imprimirTabuleiro(partida.tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.turno);
-                        Console.WriteLine("Agurdando jogada: " + partida.jogadorAtual);
+                        Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
@@ -58,16 +44,6 @@ namespace CSharpCOMPLETO_Section12
                     }
 
                 }
-
-
-
-
-
-                //PosicaoXadrez pos = new PosicaoXadrez('c', 7);
-                //Console.WriteLine(pos);
-                //Console.WriteLine(pos.toPosicao());
-
-
 
             }
             catch (TabuleiroException e)

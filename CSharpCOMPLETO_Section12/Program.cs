@@ -44,6 +44,8 @@ namespace CSharpCOMPLETO_Section12
                     }
 
                 }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
 
             }
             catch (TabuleiroException e)
